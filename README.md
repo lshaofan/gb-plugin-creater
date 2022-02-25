@@ -4,8 +4,6 @@
 composer create-project shaofan7/gb-plugin-creater
 ```
 
-
-
 ```
 # 先进入 项目根目录 目录
 # 要创建一个插件
@@ -14,10 +12,6 @@ composer create-project shaofan7/gb-plugin-creater
 composer create-project shaofan/gb-plugin-creater plugin/demo
 会在项目根目录下创建 plugin/demo 插件目录
 ```
-
-
-
-
 
 ## 插件目录示例
 
@@ -46,9 +40,9 @@ plugin/maxincai/demo/
     `-- Cases
 ```
 
-
 #感谢：
 
-本工具根据 [mochat-cloud/plugin-creater](https://[mochat-cloud/plugin-creater: MoChat plugin creater. (github.com)](https://github.com/mochat-cloud/plugin-creater)) 大量代码 Copy 而来，感谢 mochat-cloud。
+本工具根据 [mochat-cloud/plugin-creater](https://github.com/mochat-cloud/plugin-creater) 大量代码 Copy 而来，感谢 mochat-cloud。
 
 本工具根据 Hyperf 官方 component-creater 大量代码 Copy 而来，再次感谢。
+
