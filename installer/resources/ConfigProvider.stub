@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Hyperf.
+ * This file is part of Gb-Partner.
  *
- * @link     https://www.hyperf.io
- * @document https://doc.hyperf.io
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+ * @link     https://www.greenbirds.cn
+ * @document https://e-7.work
+ * @contact  liushaofan@greenbirds.cn
+ * @license  https://github.com/shaofan7
  */
-namespace Gb\Partner\command;
+namespace %NAMESPACE%;
 
 class ConfigProvider
 {
     public function __invoke(): array
     {
         return [
-            'dependencies' => [
-            ],
-            'commands' => [
+            'dependencies' => array_merge(service_map(__DIR__, __NAMESPACE__), [
+            ]),
+            'listeners' => [
             ],
             'annotations' => [
                 'scan' => [

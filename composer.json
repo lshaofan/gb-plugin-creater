@@ -1,36 +1,29 @@
 {
-    "name": "gb/command",
-    "type": "library",
-    "license": "MIT",
+    "name": "gb/devtool",
+    "type": "project",
+    "license": "GPL-3.0",
     "keywords": [
         "php",
-        "hyperf"
+        "hyperf",
+        "gb",
+        "partner"
     ],
-    "description": "gb-dommand dev",
+    "description": "Gb Plugin Create.",
     "autoload": {
         "psr-4": {
-            "Gb\\Partner\\command\\": "src/"
+            "Installer\\": "installer/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "HyperfTest\\": "tests"
+            "MoChatTest\\": "tests"
         }
     },
     "require": {
-        "php": ">=7.3",
-        "hyperf/framework": "2.2.*",
-        "hyperf/di": "2.2.*"
+        "php": ">=7.4"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "mockery/mockery": "^1.0",
-        "phpstan/phpstan": "^1.0",
-        "phpunit/phpunit": ">=7.0",
-        "swoole/ide-helper": "^4.5"
-    },
-    "suggest": {
-        "swow/swow": "Required to create swow components."
+        "composer/composer": "^2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -39,13 +32,12 @@
         "sort-packages": true
     },
     "scripts": {
+        "pre-install-cmd": "Installer\\Script::install",
+        "pre-update-cmd": "Installer\\Script::install",
+        "post-install-cmd": "Installer\\Script::cleanUp",
+        "post-create-project-cmd": "Installer\\Script::cleanUp",
         "test": "phpunit -c phpunit.xml --colors=always",
         "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
         "cs-fix": "php-cs-fixer fix $1"
-    },
-    "extra": {
-        "hyperf": {
-            "config": "Gb\\Partner\\command\\ConfigProvider"
-        }
     }
 }
