@@ -19,7 +19,7 @@ class Script
     {
         $installer = new OptionalPackages($event->getIO(), $event->getComposer());
 
-        $installer->io->write('<info>正在创建 GbPartner 插件</info>');
+        $installer->io->write('<info>正在创建插件</info>');
 
         $installer->setUpComposerJson();
         $installer->mkdir();

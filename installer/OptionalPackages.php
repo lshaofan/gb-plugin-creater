@@ -134,7 +134,7 @@ class OptionalPackages
 
     public function setUpName()
     {
-        $name = $this->io->ask('<info>插件名称 (GbPartner/demo): </info>', 'GbPartner/demo');
+        $name = $this->io->ask('<info>插件名称 (GbPartner/demo): </info>', 'partner/demo');
         $name = str_replace('\\', '/', $name);
         $name = rtrim($name, '/');
         $this->composerDefinition['name'] = $name;
