@@ -1,7 +1,7 @@
 # plugin-creater
 
 ```
-composer create-project shaofan7/gb-plugin-creater
+composer create-project shaofan/gb-plugin-creater
 ```
 
 ```

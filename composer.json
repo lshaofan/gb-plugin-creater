@@ -6,9 +6,10 @@
         "php",
         "hyperf",
         "gb",
+        "e-7",
         "partner"
     ],
-    "description": "Gb Plugin Create.",
+    "description": "e-7 Plugin Create.",
     "autoload": {
         "psr-4": {
             "Installer\\": "installer/"
@@ -16,7 +17,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MoChatTest\\": "tests"
+            "PartnerTest\\": "tests"
         }
     },
     "require": {
